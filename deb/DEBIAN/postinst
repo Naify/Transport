@@ -1,0 +1,4 @@
+#!/bin/bash
+ln -s /usr/local/transport/transport_control /usr/bin/transport
+cp /usr/local/transport/transport.desktop ~/Desktop/
+exit 0

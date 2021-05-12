@@ -1,0 +1,92 @@
+<?xml version="1.2" encoding="UTF-8"?>
+<!DOCTYPE plan_template_xml>
+<plan_template_xml version="1.1">
+    <category fullname="Планы проведения перевозок" cat_id="5" type="template" shortname="Планы проведения перевозок" objectId="-1"/>
+    <plan_description fullname="План-график проведения работ" duration="0" signature_date="no" kind="1" end_time="14.06.2018 09:28" gtid="1" start_time="14.05.2018 09:28" descr="" id="3344" approval_date="no" object_id="1957" shortname="План-график проведения работ">
+        <chapters_list>
+            <Chapter_1 plan_id="3344" short_name="3. Заключительный период" full_name="3. Заключительный период" gtid="6" seq_number="3" id="3345" object_id="1957" level="0" top_chapter_id="no" has_top_chapter="0">
+                <subchapters_list/>
+            </Chapter_1>
+            <Chapter_2 plan_id="3344" short_name="1. Подготовительный период" full_name="1. Подготовительный период" gtid="6" seq_number="1" id="3346" object_id="1957" level="0" top_chapter_id="no" has_top_chapter="0">
+                <subchapters_list/>
+            </Chapter_2>
+            <Chapter_3 plan_id="3344" short_name="2. Основной период" full_name="2. Основной период" gtid="6" seq_number="2" id="3347" object_id="1957" level="0" top_chapter_id="no" has_top_chapter="0">
+                <subchapters_list/>
+            </Chapter_3>
+        </chapters_list>
+        <tasks_list>
+            <Task_1 reason="5" full_name="Подготовка временных караулов и регулировщиков" gtid="2" id="3351" note="" status="0" short_name="Подготовка временных караулов и регулировщиков" planned_end_date="14.05.2018 18:00" real_end_date="14.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="6">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="40703912"/>
+            </Task_1>
+            <Task_2 reason="5" full_name="Подготовка спецгруза и документации к отправке" gtid="2" id="3359" note="" status="0" short_name="Подготовка спецгруза и документации к отправке" planned_end_date="16.05.2018 18:00" real_end_date="16.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="15.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="15.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="8">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_2>
+            <Task_3 reason="5" full_name="Подготовка должностных лиц ЖДЭ" gtid="2" id="3355" note="" status="0" short_name="Подготовка должностных лиц ЖДЭ" planned_end_date="14.05.2018 18:00" real_end_date="14.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="5">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="796026230"/>
+            </Task_3>
+            <Task_4 reason="5" full_name="Подготовка грузоподъемного оборудования и систем сооружений" gtid="2" id="3349" note="" status="0" short_name="Подготовка грузоподъемного оборудования и систем сооружений" planned_end_date="16.05.2018 18:00" real_end_date="16.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="16.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="16.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="7">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_4>
+            <Task_5 reason="5" full_name="Поиск закладных элементов" gtid="2" id="3353" note="" status="0" short_name="Поиск закладных элементов" planned_end_date="16.05.2018 13:00" real_end_date="16.05.2018 13:00" relative_start_date="0" completed_percents="0" real_start_date="16.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="16.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="10">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_5>
+            <Task_6 reason="5" full_name="Медицинский осмотр водительского состава и команды сопровождения" gtid="2" id="3357" note="" status="0" short_name="Медицинский осмотр водительского состава и команды сопровождения" planned_end_date="17.05.2018 13:00" real_end_date="17.05.2018 13:00" relative_start_date="0" completed_percents="0" real_start_date="17.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="17.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="11">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="6901344"/>
+            </Task_6>
+            <Task_7 reason="5" full_name="Подготовка сбр ЛПА (САК) к функционированию в режиме повышенной готовности" gtid="2" id="3365" note="" status="0" short_name="Подготовка сбр ЛПА (САК) к функционированию в режиме повышенной готовности" planned_end_date="14.05.2018 18:00" real_end_date="14.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="14">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_7>
+            <Task_8 reason="5" full_name="Подготовка водительского состава" gtid="2" id="3373" note="" status="0" short_name="Подготовка водительского состава" planned_end_date="14.05.2018 18:00" real_end_date="14.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="4">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_8>
+            <Task_9 reason="5" full_name="Подача автомобилей под погрузку (разгрузку)&#xa;" gtid="2" id="3379" note="" status="0" short_name="Подача автомобилей под погрузку (разгрузку)" planned_end_date="20.05.2018 18:00" real_end_date="19.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="2">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1"/>
+            </Task_9>
+            <Task_10 reason="5" full_name="Подготовка железнодорожного подвижного состава" gtid="2" id="3371" note="" status="0" short_name="Подготовка железнодорожного подвижного состава" planned_end_date="15.05.2018 18:00" real_end_date="15.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="3">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1"/>
+            </Task_10>
+            <Task_11 reason="5" full_name="Проверка функционирования сбр ЛПА (САК) в  режиме повышенной готовности" gtid="2" id="3381" note="" status="0" short_name="Проверка функционирования сбр ЛПА (САК) в  режиме повышенной готовности" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="8">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_11>
+            <Task_12 reason="5" full_name="Приведение в исходное состояние" gtid="2" id="3385" note="" status="0" short_name="Приведение в исходное состояние" planned_end_date="22.05.2018 18:00" real_end_date="22.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="21.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="21.05.2018 09:00" top_task_id="no" place="" chapter_id="3345" kind="0" number="2">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1807665312"/>
+            </Task_12>
+            <Task_13 reason="5" full_name="Проверка состояния и исправности дорог на маршруте" gtid="2" id="3361" note="" status="0" short_name="Проверка состояния и исправности дорог на маршруте" planned_end_date="16.05.2018 13:00" real_end_date="16.05.2018 13:00" relative_start_date="0" completed_percents="0" real_start_date="16.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="16.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="9">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_13>
+            <Task_14 reason="5" full_name="Смотр готовности личного состава и техники к отправке спецгруза" gtid="2" id="3363" note="" status="0" short_name="Смотр готовности личного состава и техники к отправке спецгруза" planned_end_date="18.05.2018 18:00" real_end_date="18.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="18.05.2018 16:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="18.05.2018 16:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="13">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_14>
+            <Task_15 reason="5" full_name="Организация дежурства пожарного расчета СППЗиСР" gtid="2" id="3377" note="" status="0" short_name="Организация дежурства пожарного расчета СППЗиСР" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="5">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="0"/>
+            </Task_15>
+            <Task_16 reason="5" full_name="Доклад в ГУ об отправке (приеме) спецгруза" gtid="2" id="3383" note="" status="0" short_name="Доклад в ГУ об отправке (приеме) спецгруза" planned_end_date="21.05.2018 10:00" real_end_date="21.05.2018 10:00" relative_start_date="0" completed_percents="0" real_start_date="21.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="21.05.2018 09:00" top_task_id="no" place="" chapter_id="3345" kind="0" number="1">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1"/>
+            </Task_16>
+            <Task_17 reason="5" full_name="Подготовка автомобильной техники" gtid="2" id="3369" note="" status="0" short_name="Подготовка автомобильной техники" planned_end_date="15.05.2018 18:00" real_end_date="15.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="13.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="13.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="2">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="28456344"/>
+            </Task_17>
+            <Task_18 reason="5" full_name="Постановка задач должностным лицам" gtid="2" id="3367" note="" status="0" short_name="Постановка задач должностным лицам" planned_end_date="12.05.2018 10:30" real_end_date="12.05.2018 10:30" relative_start_date="0" completed_percents="0" real_start_date="12.05.2018 10:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="12.05.2018 10:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="1">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="28429448"/>
+            </Task_18>
+            <Task_19 reason="5" full_name="Инструктаж личного состава команды сопровождения" gtid="2" id="3375" note="" status="0" short_name="Инструктаж личного состава команды сопровождения" planned_end_date="18.05.2018 12:00" real_end_date="18.05.2018 12:00" relative_start_date="0" completed_percents="0" real_start_date="18.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="18.05.2018 09:00" top_task_id="no" place="" chapter_id="3346" kind="0" number="12">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="28551544"/>
+            </Task_19>
+            <Task_20 reason="5" full_name="Сбор личного состава, участвующего в отправке (приеме), на местах проведения работ" gtid="2" id="3395" note="" status="0" short_name="Сбор личного состава, участвующего в отправке (приеме), на местах проведения работ" planned_end_date="19.05.2018 10:00" real_end_date="19.05.2018 10:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="1">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="28441240"/>
+            </Task_20>
+            <Task_21 reason="5" full_name="Выдача (прием) спецгрузов из спецсоружения (в спецсооружение)" gtid="2" id="3387" note="" status="0" short_name="Выдача (прием) спецгрузов из спецсоружения (в спецсооружение)" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="3">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1"/>
+            </Task_21>
+            <Task_22 reason="5" full_name="Подача ж/д подвижного состава на рабочее место №__ ж/д парка для погрузки (выгрузки)" gtid="2" id="3389" note="" status="0" short_name="Подача ж/д подвижного состава на рабочее место №__ ж/д парка для погрузки (выгрузки)" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="4">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="-1"/>
+            </Task_22>
+            <Task_23 reason="5" full_name="Доставка спецгруза автомобильной колонной на ЖДБ (сооружение)" gtid="2" id="3391" note="" status="0" short_name="Доставка спецгруза автомобильной колонной на ЖДБ (сооружение)" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="6">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="38962104"/>
+            </Task_23>
+            <Task_24 reason="5" full_name="Погрузка (выгрузка) спецгрузов в вагоны (из вагонов)" gtid="2" id="3393" note="" status="0" short_name="Погрузка (выгрузка) спецгрузов в вагоны (из вагонов)" planned_end_date="20.05.2018 18:00" real_end_date="20.05.2018 18:00" relative_start_date="0" completed_percents="0" real_start_date="19.05.2018 09:00" object_id="1957" has_top_task="0" plan_id="3344" relative_duration="0" planned_start_date="19.05.2018 09:00" top_task_id="no" place="" chapter_id="3347" kind="0" number="7">
+                <IDXmlFile type_xml="0" id_xml="0" old_id="39551624"/>
+            </Task_24>
+        </tasks_list>
+    </plan_description>
+</plan_template_xml>

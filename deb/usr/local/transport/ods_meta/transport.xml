@@ -1,0 +1,1776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ods_meta>
+	<schemes>
+		<scheme name="Контроль перевозок">
+			<types>
+				<type name="Распоряжения">
+					<attrs>
+						<attr name="Номер" type="String"/>
+						<attr name="Дата" type="Date"/>
+						<attr name="Содержание" type="Link"/>
+					</attrs>
+				</type>
+				<type name="Содержание">
+					<attrs>
+						<attr name="Вид транспорта" type="String"/>
+						<attr name="Ответственный" type="Link"/>
+						<attr name="Особые указания" type="String"/>                 
+					</attrs>
+				</type>
+				<type name="Содержание таблица">
+					<attrs>
+						<attr name="№№ п/п" type="Int"/>
+						<attr name="Отправитель" type="Link"/>
+						<attr name="Получатель" type="Link"/>
+						<attr name="Дата отправки" type="Date"/>
+						<attr name="Наименование груза" type="Link"/>
+						<attr name="Кол-во" type="Int"/>
+						<attr name="СГ" type="String"/>
+						<attr name="Блокировка" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="Марш задание" type="Link"/>
+						<attr name="Ввоз" type="Bool"/>
+						<attr name="Размещение" type="Bool"/>
+						<attr name="Изъятие" type="Bool"/>
+						<attr name="Вывоз" type="Bool"/>
+					</attrs>
+				</type>
+				<type name="Изделие">
+					<attrs>
+						<attr name="Наименование" type="String"/>
+						<attr name="Номенклатура" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="Зав. ном-р" type="String"/>
+						<attr name="Шифр тары" type="String"/>
+						<attr name="СГ" type="String"/>
+						<attr name="Блок" type="String"/>
+						<attr name="Пломба тары" type="String"/>
+						<attr name="Тип ТЗУ" type="String"/>
+						<attr name="Зав. ном-р ТЗУ" type="String"/>
+						<attr name="Пломба ТЗУ" type="String"/>
+						<attr name="Тип вагона" type="String"/>
+						<attr name="Номер вагона" type="String"/>
+						<attr name="Пломба вагона" type="String"/>
+						<attr name="Содержание таблица" type="Link"/>
+						<attr name="Автоколонна" type="String"/>
+						<attr name="Бригада" type="String"/>
+						<attr name="Сооружение" type="String"/>
+						<attr name="Рейс" type="String"/>
+					</attrs>
+				</type>
+				<type name="Маршрутное задание">
+					<attrs>
+						<attr name="Наименование" type="String"/>
+						<attr name="ДатаВремя отправки" type="DateTime"/>
+						<attr name="ДатаВремя возврата" type="DateTime"/>
+						<attr name="Номер задания" type="Int"/>
+						<attr name="Дата марш задания" type="Date"/>
+						<attr name="Категория" type="String"/>
+						<attr name="Направление" type="Int"/>
+						<attr name="Выполнен" type="Bool"/>
+						<attr name="Ответственное лицо" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="Транспорт" type="Link"/>
+						<attr name="Станция прибытия" type="String"/>
+						<attr name="Станция отправки" type="String"/>
+						<attr name="Получатель задание" type="Link"/>
+						<attr name="Отправитель задание" type="Link"/>
+						<attr name="Количество грузов" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Контрольные точки">
+				   <attrs>
+						<attr name="Наименование" type="String"/>
+						<attr name="Прибытие" type="DateTime"/>
+						<attr name="Прибытие факт" type="DateTime"/>
+						<attr name="Убытие" type="DateTime"/>
+						<attr name="Убытие факт" type="DateTime"/>
+						<attr name="Марш задание" type="Link"/>
+						<attr name="Состояние" type="Int"/>
+						<attr name="Пройдена" type="Bool"/>
+						<attr name="Комментарий" type="String"/>
+						<attr name="НВТ" type="String"/>
+					</attrs>
+				</type>
+				<type name="Зоны ответственности">
+					<attrs>
+						<attr name="Наименование" type="String"/>
+						<attr name="Вход" type="DateTime"/>
+						<attr name="Выход" type="DateTime"/>
+						<attr name="Марш задание" type="Link"/>
+					</attrs>
+				</type>
+				<type name="Станции ПА и ПНВТ">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Номер ЖДЭ" type="String"/>
+						<attr name="Станция ПА" type="String"/>
+						<attr name="ПНВТ" type="String"/>
+						<attr name="Марш задание" type="Link"/>                  
+					</attrs>
+				</type>
+				<type name="Станции ПА и ПНВТ">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Номер ЖДЭ" type="String"/>
+						<attr name="Станция ПА" type="String"/>
+						<attr name="ПНВТ" type="String"/>
+						<attr name="Марш задание" type="Link"/>                  
+					</attrs>
+				</type>
+				<type name="Заявки">
+					<attrs>
+						<attr name="Наименование проекта" type="String"/>
+						<attr name="Вид транспорта" type="String"/>
+						<attr name="Категория перевозки" type="String"/>
+						<attr name="Аварийная карточка" type="Link"/>
+						<attr name="Доп инфо" type="String"/>
+						<attr name="Ответственный" type="Link"/>
+						<attr name="Подпись" type="String"/>
+						<attr name="Номер заявки" type="String"/>
+						<attr name="Дата заявки" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Содержание заявок">
+					<attrs>
+						<attr name="Заявка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Отправитель" type="Link"/>						
+						<attr name="Станция отправления" type="String"/>
+						<attr name="Дата время подачи" type="DateTime"/>
+						<attr name="Тип вагонов" type="Link"/>
+						<attr name="Тип вагонов строка" type="String"/>
+						<attr name="Количество" type="Int"/>
+						<attr name="Номера вагонов" type="String"/>
+						<attr name="Дата время отправления" type="DateTime"/>
+						<attr name="Станция назначения" type="String"/>
+						<attr name="Получатель" type="Link"/>
+						<attr name="Офицеры" type="Int"/>
+						<attr name="Прапорщики" type="Int"/>
+						<attr name="Сержанты" type="Int"/>
+						<attr name="Солдаты" type="Int"/>
+					</attrs>
+				</type>
+			</types>
+		</scheme>
+		<scheme name="Транспортные средства">
+			<types>
+				<type name="Автоколонна">
+					<attrs>
+						<attr name="Должность" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="Номер автоколонны" type="Int"/>
+						<attr name="В/звание" type="String"/>
+						<attr name="ФИО" type="String"/>
+						<attr name="Назначение" type="String"/>
+						<attr name="Марка" type="String"/>
+						<attr name="Номер" type="String"/>
+					</attrs>
+				</type>
+				<type name="Вагоны">
+					<attrs>
+						<attr name="Тип вагона" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="Назначение" type="String"/>
+						<attr name="Регистр. номер" type="String"/>
+						<attr name="Фланг" type="String"/>
+						<attr name="Номер во фланге" type="Int"/>
+					</attrs>
+				</type> 
+			</types>
+		</scheme>
+		<scheme name="Документы КП">
+			<types>
+				<type name="Командировочное удостоверение">
+					<attrs>
+						<attr name="Дата приказа" type="Date"/>
+						<attr name="Дата начала" type="Date"/>
+						<attr name="Дата окончания" type="Date"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Пункты назначения" type="String"/>
+						<attr name="Подпись1" type="String"/>
+						<attr name="Подпись2" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+					</attrs>
+				</type>          
+			</types>
+		</scheme>
+		<scheme name="Состав команды">
+			<types>
+				<type name="Сопровождение">
+					<attrs>
+						<attr name="В/звание" type="String"/>
+						<attr name="Фамилия" type="String"/>
+						<attr name="Имя" type="String"/>
+						<attr name="Отчество" type="String"/>
+						<attr name="Распоряжение" type="Link"/>
+						<attr name="В группе с" type="Link"/>
+						<attr name="Наимен. вооруж." type="String"/>
+						<attr name="Номер вооруж." type="String"/>
+						<attr name="Назнач. вагона" type="String"/>
+						<attr name="Номер вагона" type="String"/>
+						<attr name="Примечание" type="String"/>
+						<attr name="Должность" type="String"/>
+						<attr name="Сопровождает" type="Link"/>
+					</attrs>
+				</type>          
+			</types>
+		</scheme>
+		<scheme name="Учет">
+			<types>
+				<type name="Командировка">
+					<attrs>
+						<attr name="Дата начала" type="Date"/>
+						<attr name="Дата окончания" type="Date"/>
+						<attr name="Примечание" type="String"/>
+						<attr name="Командированный" type="Int"/>
+					</attrs>
+				</type>          
+			</types>
+		</scheme>
+		<scheme name="Перечень грузов">
+			<types>
+				<type name="Запчасти">
+					<attrs>
+						<attr name="Наименование" type="String"/>
+						<attr name="Номенклатура" type="String"/>
+						<attr name="Индекс" type="String"/>
+						<attr name="Зав. ном-р" type="String"/>
+						<attr name="Имя" type="String"/>
+						<attr name="Гриф" type="Int"/>
+						<attr name="Шифр" type="String"/>
+						<attr name="К-во мест" type="String"/>
+						<attr name="Пломба" type="String"/>
+						<attr name="К-во пломб" type="String"/>
+						<attr name="Примечание" type="String"/>
+						<attr name="Номер вагона" type="String"/>
+						<attr name="Содержание таблица" type="Link"/>
+						<attr name="Распоряжение" type="Link"/>						
+					</attrs>
+				</type>          
+			</types>
+		</scheme>
+		<scheme name="Допуска КП">
+			<types>
+				<type name="Вч для допусков">
+					<attrs>
+						<attr name="ОШС Вч" type="Link"/>
+						<attr name="Дата изменения" type="DateTime"/>
+					</attrs>
+				</type>
+				<type name="Личный состав">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Вч" type="Link"/>
+						<attr name="ФИО" type="String"/>
+						<attr name="Воинское звание" type="Link"/>
+						<attr name="Должность" type="Link"/>
+						<attr name="Дата назначения" type="Date"/>						
+					</attrs>
+				</type>
+				<type name="Допуска к СИ">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>						
+						<attr name="СИ" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска мед">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>						
+						<attr name="Дата прохождения ВВК" type="Date"/>
+						<attr name="Срок заключения ВВК" type="Int"/>
+						<attr name="Заключение" type="Bool"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска группы А">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Дата аттестации" type="Date"/>						
+						<attr name="Результат аттестации" type="Bool"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска ЗНЖДЭ">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска ЗНАК">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска сопровождающие">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска ЗНК">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска караульные">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска крановщики">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска 1ЗНЖДЭ">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска 2ЗНЖДЭ">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска механики спец вагонов">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска помощники начальника караула">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска расчет радиостанции">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска разводящие">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Допуска к аварийным СИ">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="СИ" type="Link"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Место сдачи" type="Link"/>
+					</attrs>
+				</type>
+				<type name="Допуска к ЛПА">
+					<attrs>
+						<attr name="Вч" type="Link"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Дата назначения" type="Date"/>
+						<attr name="Номер приказа" type="String"/>
+						<attr name="Срок действия" type="Int"/>
+						<attr name="Дата окончания" type="Date"/>
+					</attrs>
+				</type>
+			</types>
+		</scheme>
+		<scheme name="Определение сил и средств">
+			<types>
+				<type name="Перевозка">
+					<attrs>
+						<attr name="Содержание распоряжения" type="Link"/>
+						<attr name="Категория" type="String"/>
+						<attr name="Вид транспорта" type="String"/>
+					</attrs>
+				</type>
+				<type name="Спец вагоны">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Обозначение" type="Link"/>
+						<attr name="Заводской номер" type="String"/>
+						<attr name="Общесетевой номер" type="String"/>
+						<attr name="Год постройки" type="Date"/>
+						<attr name="Дата посл ЕТР" type="Date"/>
+						<attr name="Дата посл ДР" type="Date"/>
+						<attr name="Дата посл ЗР" type="Date"/>
+						<attr name="Готовность" type="Bool"/>
+						<attr name="Дата очеред ЕТР" type="Date"/>
+						<attr name="Дата очеред ДР" type="Date"/>
+						<attr name="Дата очеред ЗР" type="Date"/>
+						<attr name="Тип охранной системы" type="String"/>
+						<attr name="Отсутствует" type="Bool"/>
+					</attrs>
+				</type>
+				<type name="Спец авто">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Обозначение" type="Link"/>
+						<attr name="Заводской номер" type="String"/>
+						<attr name="Воен номер" type="String"/>
+						<attr name="Год выпуска" type="Date"/>
+						<attr name="Дата посл переосвид" type="Date"/>
+						<attr name="Готовность" type="Bool"/>
+						<attr name="Дата очеред освид" type="Date"/>
+						<attr name="Примечание" type="String"/>
+						<attr name="Отсутствует" type="Bool"/>
+					</attrs>
+				</type>
+				<type name="ТЗУ и СК">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Обозначение" type="Link"/>
+						<attr name="Заводской номер" type="String"/>
+						<attr name="Год выпуска" type="Date"/>
+						<attr name="Готовность" type="Bool"/>
+						<attr name="Примечание" type="String"/>
+						<attr name="Отсутствует" type="Bool"/>
+					</attrs>
+				</type>
+				<type name="Инж техника">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="ОбозначениеСтрока" type="Sring"/>
+						<attr name="Заводской номер" type="String"/>
+						<attr name="Регистрац номер" type="String"/>
+						<attr name="Воен номер" type="String"/>
+						<attr name="Год выпуска" type="Date"/>
+						<attr name="Дата посл переосвид" type="Date"/>
+						<attr name="Готовность" type="Bool"/>
+						<attr name="Дата очеред освид" type="Date"/>
+					</attrs>
+				</type>
+				<type name="Машины обеспечения">
+					<attrs>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="ОбозначениеСтрока" type="String"/>
+						<attr name="Заводской номер" type="String"/>
+						<attr name="Воен номер" type="String"/>
+						<attr name="Год выпуска" type="Date"/>
+						<attr name="Готовность" type="Bool"/>
+					</attrs>
+				</type>
+				<type name="Вагоны определение">
+					<attrs>
+						<attr name="Температурный режим" type="Bool"/>
+						<attr name="Средства защиты" type="Bool"/>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Количество вагонов" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Вагоны определение таблица">
+					<attrs>					
+						<attr name="Определение" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Количество СИ" type="Int"/>
+						<attr name="Тип контейнера" type="Link"/>						
+						<attr name="Тип вагона" type="Link"/>						
+						<attr name="Количество контейнеров" type="Int"/>
+						<attr name="Количество вагонов" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Команда сопровождения определение">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Должность" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Команда сопровождения">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Должность" type="Link"/>
+						<attr name="Человек" type="Link"/>
+						<attr name="Вооружение наименование" type="String"/>
+						<attr name="Вооружение номер" type="Sring"/>
+						<attr name="Вагон/авто обозначение" type="Sring"/>
+						<attr name="Вагон/авто номер" type="Sring"/>
+					</attrs>
+				</type>
+				<type name="Вооружение">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Резерв вооружения">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Средства связи и сигнализации">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Средства рхб защиты">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Мед имущество">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+				<type name="Пожарное имущество">
+					<attrs>
+						<attr name="Перевозка" type="Link"/>
+						<attr name="Порядковый номер" type="Int"/>
+						<attr name="Наименование" type="String"/>
+						<attr name="Количество" type="Int"/>
+					</attrs>
+				</type>
+			</types>
+		</scheme>
+	</schemes>
+	<subjects>
+		<users/>
+		<groups>
+            <group lockable="false" name="Пользователи Контроль перевозок">
+                <rights>
+					<right name="Grant" type="allow">
+                        <type name="Заявки" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Содержание заявок" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Машины обеспечения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Перевозка" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Спец вагоны" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Спец авто" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="ТЗУ и СК" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Инж техника" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вагоны определение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Команда сопровождения определение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Команда сопровождения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вооружение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Резерв вооружения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Средства связи и сигнализации" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Средства рхб защиты" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Мед имущество" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Пожарное имущество" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>			
+					<right name="Grant" type="allow">
+                        <type name="Допуска сопровождающие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Личный состав" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вч для допусков" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к СИ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска мед" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска группы А" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНАК" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска сопросвождающие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНК" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска караульные" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска крановщики" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>				
+					<right name="Grant" type="allow">
+                        <type name="Допуска 1ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска 2ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска механики спец вагонов" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска помощники начальника караула" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска расчет радиостанции" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска разводящие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к аварийным СИ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к ЛПА" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>					
+                    <right name="Grant" type="allow">
+                        <type name="Распоряжения" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Содержание" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Содержание таблица" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Изделие" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Автоколонна" scheme="Транспортные средства"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Вагоны" scheme="Транспортные средства"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Командировочное удостоверение" scheme="Документы КП"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Сопровождение" scheme="Состав команды"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Командировка" scheme="Учет"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Запчасти" scheme="Перечень грузов"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Маршрутное задание" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Контрольные точки" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Зоны ответственности" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Станции ПА и ПНВТ" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                </rights>
+                <groups/>
+            </group>
+            <group lockable="false" name="Администраторы Контроль перевозок">
+                <rights>
+					<right name="Grant" type="allow">
+                        <type name="Заявки" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Содержание заявок" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Машины обеспечения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Перевозка" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Спец вагоны" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Спец авто" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="ТЗУ и СК" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Инж техника" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вагоны определение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Команда сопровождения определение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Команда сопровождения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вооружение" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Резерв вооружения" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Средства связи и сигнализации" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Средства рхб защиты" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Мед имущество" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Пожарное имущество" scheme="Определение сил и средств"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска сопровождающие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Личный состав" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Вч для допусков" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к СИ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска мед" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска группы А" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНАК" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска сопросвождающие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска ЗНК" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска караульные" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска крановщики" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска 1ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска 2ЗНЖДЭ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска механики спец вагонов" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска помощники начальника караула" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска расчет радиостанции" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска разводящие" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к аварийным СИ" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+					<right name="Grant" type="allow">
+                        <type name="Допуска к ЛПА" scheme="Допуска КП"/>
+                        <subjects>                           
+                            <groups>
+								<group name="Пользователи Контроль перевозок"/>
+                                <group name="Администраторы Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Распоряжения" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Содержание" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Содержание таблица" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Изделие" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Автоколонна" scheme="Транспортные средства"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Вагоны" scheme="Транспортные средства"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Командировочное удостоверение" scheme="Документы КП"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Сопровождение" scheme="Состав команды"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Командировка" scheme="Учет"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Запчасти" scheme="Перечень грузов"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Маршрутное задание" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Контрольные точки" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Зоны ответственности" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                    <right name="Grant" type="allow">
+                        <type name="Станции ПА и ПНВТ" scheme="Контроль перевозок"/>
+                        <subjects>                           
+                            <groups>
+                                <group name="Администраторы Контроль перевозок"/>
+                                <group name="Пользователи Контроль перевозок"/>
+								<group name="Пользователи ПИК"/>
+								<group name="Администраторы ПИК"/>
+                            </groups>
+                        </subjects>
+                    </right>
+                </rights>
+                <groups/>
+            </group>
+            <group lockable="false" name="$$$Все пользователи">
+                <rights/>
+                <groups>
+                    <group lockable="false" name="Пользователи Контроль перевозок" />
+                </groups>
+            </group>
+            <group lockable="false" name="$$$Системные администраторы">
+                <rights/>
+                <groups>
+                    <group lockable="false" name="Администраторы Контроль перевозок" />
+                </groups>
+            </group>
+            <group lockable="false" name="$$$Контейнер пользователи">
+                <rights/>
+                <groups>
+                    <group lockable="false" name="Пользователи Контроль перевозок" />
+                </groups>
+            </group>
+            <group lockable="false" name="$$$Контейнер администраторы">
+                <rights/>
+                <groups>
+                    <group lockable="false" name="Администраторы Контроль перевозок" />
+                </groups>
+            </group>
+		</groups>
+	</subjects>
+</ods_meta>

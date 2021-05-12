@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sync_rules app="КП.Учет - с ПАК-Ц на ПАК-О">
+	<schemes>
+	    <scheme name="Контроль перевозок">
+			<types>
+				<type name="Распоряжения"/>
+				<type name="Содержание"/>
+				<type name="Содержание таблица"/>		    
+				<type name="Маршрутное задание"/>
+				<type name="Контрольные точки"/>
+				<type name="Зоны ответственности"/>
+				<type name="Станции ПА и ПНВТ"/>
+			</types>
+	    </scheme>
+	</schemes>
+	<rules>
+		<rule group="Пользователи Контроль перевозок" right="read"/>
+		<rule group="Администраторы Контроль перевозок" right="all"/>
+		<rule group="Администраторы ПИК" right="read"/>
+	</rules>
+</sync_rules>

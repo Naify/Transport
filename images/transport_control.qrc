@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>del.png</file>
+        <file>minus.png</file>
+        <file>new.png</file>
+        <file>ok.png</file>
+        <file>open.png</file>
+        <file>paste.png</file>
+        <file>pencil.png</file>
+        <file>plus.png</file>
+        <file>reload.png</file>
+        <file>save.png</file>
+        <file>transport_icon.png</file>
+    </qresource>
+</RCC>

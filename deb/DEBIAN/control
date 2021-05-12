@@ -1,0 +1,8 @@
+Package: transport
+Version: 1.21.11-2.3.1
+Architecture: amd64
+Priority: extra
+Section: base
+Maintainer: eureca
+Description: Transport program
+Depends: ods-interface, irs, ods-staff, wordml, bsps-plan

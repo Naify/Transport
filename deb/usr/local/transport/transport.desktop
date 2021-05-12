@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Контроль перевозок
+Name[ru]=Контроль перевозок
+Type=Application
+NoDisplay=false
+Exec=/usr/bin/transport
+Icon=/usr/local/transport/transport_icon.png
+Hidden=false
+Terminal=false
+StartupNotify=false

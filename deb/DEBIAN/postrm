@@ -1,0 +1,4 @@
+#!/bin/bash
+unlink /usr/bin/transport
+unlink ~/Desktop/transport.desktop
+exit 0

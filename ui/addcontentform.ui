@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddContentForm</class>
+ <widget class="QWidget" name="AddContentForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>146</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Добавить содержание</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../transport_control.qrc">
+    <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="rowCount">
+      <number>1</number>
+     </property>
+     <property name="columnCount">
+      <number>8</number>
+     </property>
+     <row/>
+     <column>
+      <property name="text">
+       <string>№№ п/п</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Отправитель</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Получатель</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Дата отправки</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Наименование груза</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Кол-во</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>СГ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Блокировка</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_exit">
+       <property name="text">
+        <string>Выход</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_save</tabstop>
+  <tabstop>pushButton_exit</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../transport_control.qrc"/>
+ </resources>
+ <connections/>
+</ui>
